@@ -1,0 +1,191 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    font-family:'bai jamjuree',sans-serif;
+    font-weight:400,600;
+    font-size:18px;
+    text-align:center;
+    line-height: 1.8rem;
+
+}
+.wrapper{
+    max-width:1440px;
+    width:95%;
+    margin:0 auto;
+}
+header{
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image:url(../images/bg-header-desktop.png);
+    height:15rem;
+}
+header svg{
+    margin-bottom:2rem;
+}
+p{
+    font-size:18px;
+    opacity:0.8;
+    
+    
+}
+.sec1 h1{
+    font-size:2.5rem;
+    
+}
+botton{
+   
+     margin:1rem 0.2rem 6rem 0.2rem;
+     padding:0.5rem;
+     border-radius:5rem;
+     color:white;
+     cursor: pointer;
+     display:inline-block;
+     width:10rem;
+     
+}
+.green-botton{
+    background:hsl(171, 66%, 44%);
+}
+.purple-botton{
+    background:hsl(233, 100%, 69%);  
+}
+.purple-botton:hover{
+    background:hsl(233, 82%, 58%); 
+}
+.green-botton:hover{
+    background:hsl(171, 62%, 35%);
+}
+.floatleft-image img {
+    float:left;
+    margin:2rem 5rem 8rem 0;
+    padding-right:3rem;
+    
+}
+
+.floated-image-sec:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.fnear-box{
+    margin-top:9rem;
+    text-align:left;
+}
+.section2-1row{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    margin:5rem 1rem 5rem 1rem;
+    
+}
+.s2-row1-div1 h4{
+    margin-top:15px;   
+}
+/*............section2 row 2.........*/
+ .logo-row{
+     display:flex;
+     flex-flow:row nowrap;
+     justify-content: space-between;
+     margin:8rem 2rem 8rem 2rem;
+ }
+ /*...........section3..........*/
+ .upperfooter{
+     display:flex;
+     flex-flow:row nowrap;
+     background:hsl(204, 24%, 96%);
+     justify-content: space-between;
+      height:150px;
+ }
+
+.ufooter-left{
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    flex-basis:70%;
+    justify-content: space-around;
+}
+.ufooter-right{
+    display:flex;
+    flex-flow:row nowrap;
+    flex-basis: 30%;
+    justify-content: center;
+    align-items: center;
+}
+.ufooter-left p {
+margin:0 0 10px 0;    
+text-align: left;
+}
+
+.ufooter-right svg{
+    margin:3px;
+}
+.ufooter-right svg:hover{
+    cursor: pointer;
+}
+footer{
+    display:flex;
+    flex-flow:row wrap;
+    height:auto;
+    background:hsl(171, 66%, 44%);
+}
+
+/*......................phone.................*/
+@media only screen and (max-width:375px){
+    .wrapper{
+        width:100%;
+        overflow:hidden;
+    }
+   
+header{
+    background-image:url(../images/bg-header-mobile.png);
+    
+}
+
+.sec1 h1{
+    font-size:1.5rem;
+}
+.floatleft-image{
+    display:block;
+    width: 100%;
+}
+.middle-pic{
+    widows: 100%;
+    margin:20px;
+}
+.floatleft-image img,.middle-pic img{
+    width:100%;
+}
+
+.section2-1row,.logo-row,.logo-row div,.section2-1row div{
+    flex-flow: column nowrap;
+    margin-bottom:40px;
+    width:100%;
+    justify-content: center;
+}
+.fnear-box{
+    text-align:center;
+}
+
+.upperfooter,.ufooter-left{
+    flex-flow: column nowrap;
+    width:100%;
+    height:auto;
+    margin:30px 0 30px 0;
+    align-items:center;
+    text-align:center;
+}
+botton{
+    margin:4px 0 8px 0;
+
+}
+.ufooter-right{
+    justify-content:space-evenly;
+    width:100%;
+}
+.ufooter-left p{
+    text-align:left;
+}
+
+}
